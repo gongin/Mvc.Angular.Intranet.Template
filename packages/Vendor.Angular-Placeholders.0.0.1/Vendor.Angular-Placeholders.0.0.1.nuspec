@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Vendor.Angular-Placeholders</id>
+    <version>0.0.1</version>
+    <authors>Josh D Miller</authors>
+    <owners>Josh D Miller</owners>
+    <projectUrl>http://joshdmiller.github.io/angular-placeholders/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Client-side place holder directives written in pure AngularJS</description>
+    <dependencies>
+      <dependency id="Vendor.Angular" version="1.0.8" />
+    </dependencies>
+    <references />
+  </metadata>
+</package>

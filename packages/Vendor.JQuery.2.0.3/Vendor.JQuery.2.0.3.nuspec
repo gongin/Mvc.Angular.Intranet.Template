@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Vendor.JQuery</id>
+    <version>2.0.3</version>
+    <authors>JQuery</authors>
+    <owners>JQuery</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>jQuery component</description>
+    <summary />
+    <tags>JQuery</tags>
+    <references />
+  </metadata>
+</package>

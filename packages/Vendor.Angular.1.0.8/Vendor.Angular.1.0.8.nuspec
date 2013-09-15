@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Vendor.Angular</id>
+    <version>1.0.8</version>
+    <authors>github.com/angular</authors>
+    <owners>github.com/angular</owners>
+    <projectUrl>http://github.com/angular</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>AngularJS packaged to install as a bower vendor folder.</description>
+    <references />
+  </metadata>
+</package>

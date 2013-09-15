@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Vendor.Angular-UI.Bootstrap</id>
+    <version>0.6.0</version>
+    <authors>https://github.com/angular-ui/bootstrap/graphs/contributors</authors>
+    <owners>https://github.com/angular-ui/bootstrap/graphs/contributors</owners>
+    <projectUrl>https://github.com/angular-ui/bootstrap/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Twitter bootstrap completely re-written using angular directives</description>
+    <summary>Main:
+./ui-bootstrap-tpls.js</summary>
+    <dependencies>
+      <dependency id="Vendor.Angular" version="1.0.8" />
+    </dependencies>
+    <references />
+  </metadata>
+</package>

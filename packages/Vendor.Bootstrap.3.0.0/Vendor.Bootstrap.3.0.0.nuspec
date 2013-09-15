@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Vendor.Bootstrap</id>
+    <version>3.0.0</version>
+    <authors>Twitter Inc.</authors>
+    <owners>Twitter Inc.</owners>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <projectUrl>https://github.com/twbs/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Sleek, intuitive, and powerful front-end framework for faster and easier web development.</description>
+    <summary>Main: 
+./dist/js/bootstrap.js
+./dist/css/bootstrap.css</summary>
+    <dependencies>
+      <dependency id="Vendor.JQuery" version="2.0.3" />
+    </dependencies>
+    <references />
+  </metadata>
+</package>
