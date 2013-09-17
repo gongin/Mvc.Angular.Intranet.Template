@@ -1,8 +1,50 @@
-﻿<div class="container">
-    <div class="col-md-4">
-        <p>Image Dimensions: <input data-ng-model="imageDimension" class="col-md-3"></input></p>
+﻿<div class="row">
+    <div class="col-md-4" data-ng-init="numSentences = '3'; numParagraphs = '2';numCombined = '2p3s'">
+        <div class="row">
+            <div class="col-md-3">
+                Image Dimensions: 
+            </div>
+            <div class="col-md-9">
+                <input data-ng-model="imageDimension" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                # Sentences: 
+            </div>
+            <div class="col-md-9">
+                <input data-ng-model="numSentences" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                # Paragraphs: 
+            </div>
+            <div class="col-md-9">
+                <input data-ng-model="numParagraphs" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                # Combined: 
+            </div>
+            <div class="col-md-9">
+                <input data-ng-model="numCombined" />
+            </div>
+        </div>
     </div>
-    <div class="col-md-8">        
-        <img class="img-polaroid" data-ph-img="{{imageDimension}}"/>
+    <div class="col-md-8">
+        <div class="row">
+        <img class="img-polaroid" data-ph-img="{{imageDimension}}" />
+            </div>
+        <div class="row">
+            <p data-ph-txt="{{numSentences}}s"></p>
+        </div>
+        <div class="row">
+            <p data-ph-txt="{{numParagraphs}}p"></p>
+        </div>
+        <div class="row">
+            <p data-ph-txt="{{numCombined}}"></p>
+        </div>
     </div>
 </div>
