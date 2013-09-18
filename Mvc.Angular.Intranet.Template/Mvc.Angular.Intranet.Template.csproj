@@ -163,7 +163,6 @@
     <Content Include="App\AppSource\Home\home.js" />
     <Content Include="App\AppSource\Home\home.spec.js" />
     <Content Include="App\Assets\images\background.png" />
-    <Content Include="Content\Site.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="App\Assets\fonts\Roboto-Regular.woff" />
@@ -172,6 +171,8 @@
     <Content Include="App\Common\Services\titleService\titleService.coffee" />
     <Content Include="App\Common\Services\titleService\titleService.spec.coffee" />
     <Content Include="App\AppSource\Home\home.less" />
+    <Content Include="App\Common\Resources\Header\header.tpl.html" />
+    <Content Include="App\Common\Resources\Header\header.less" />
     <None Include="Properties\PublishProfiles\Mvc.Ng.Release.pubxml" />
     <Content Include="Vendor\angular-bootstrap\ui-bootstrap-tpls.js" />
     <Content Include="Vendor\angular-bootstrap\ui-bootstrap-tpls.min.js" />
@@ -664,7 +665,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App\Common\Directives\" />
-    <Folder Include="App\Common\Resources\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

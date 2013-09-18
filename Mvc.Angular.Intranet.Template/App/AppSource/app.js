@@ -1,6 +1,7 @@
 ﻿var app = angular.module('app', [
   'titleService',
   'ui.router',
+  'ui.bootstrap',
   'home'
 ]);
 

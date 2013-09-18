@@ -9,8 +9,7 @@ namespace Mvc.Angular.Intranet.Template
         public static void RegisterBundles(BundleCollection bundles)
         {
             var cssBundle = new StyleBundle("~/Content/css")
-                .Include("~/Vendor/bootstrap/dist/css/bootstrap.css")
-                .Include("~/Content/site.css");
+                .Include("~/Vendor/bootstrap/dist/css/bootstrap.css");
             cssBundle.Transforms.Add(new CssMinify());
             bundles.Add(cssBundle);
 
