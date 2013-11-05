@@ -1,0 +1,15 @@
+{
+  "name": "stringjs",
+  "homepage": "https://github.com/jprichardson/string.js",
+  "version": "1.6.0",
+  "_release": "1.6.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.6.0",
+    "commit": "3c8742f5f665a3ea16830670740b48b6bd073645"
+  },
+  "_source": "git://github.com/jprichardson/string.js.git",
+  "_target": "~1.6.0",
+  "_originalSource": "stringjs",
+  "_direct": true
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Vendor.StringJs</id>
+    <version>1.6.0</version>
+    <authors>JP Richardson</authors>
+    <owners>http://stringjs.com/#contributions/contributors</owners>
+    <licenseUrl>http://stringjs.com/#license</licenseUrl>
+    <projectUrl>http://stringjs.com</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>string.js, or simply S is a lightweight (&lt; 5 kb minified and gzipped) JavaScript library for the browser or for Node.js that provides extra String methods.</description>
+  </metadata>
+</package>

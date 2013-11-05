@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc.Angular.Intranet.Template", "Mvc.Angular.Intranet.Template\Mvc.Angular.Intranet.Template.csproj", "{237B85A7-EA9B-4762-BF5B-2EA63128169A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{259C08E9-62ED-44A6-9E09-60BD1DD46AAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

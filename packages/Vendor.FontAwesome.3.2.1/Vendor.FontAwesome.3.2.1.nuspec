@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Vendor.FontAwesome</id>
     <version>3.2.1</version>
@@ -11,6 +11,5 @@
     <description>Font Awesome is a full suite of 361 pictographic icons for easy scalable vector graphics on websites, created and maintained by Dave Gandy. Stay up to date @fontawesome.
 
 Get started at http://fontawesome.io!</description>
-    <references />
   </metadata>
 </package>

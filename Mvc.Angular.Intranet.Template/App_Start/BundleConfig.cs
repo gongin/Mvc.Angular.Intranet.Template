@@ -17,6 +17,8 @@ namespace Mvc.Angular.Intranet.Template
                 .Include("~/Vendor/angular/angular.js")
                 .Include("~/Vendor/angular-bootstrap/ui-bootstrap-tpls.js")
                 .Include("~/Vendor/angular-ui-router/angular-ui-router.js")
+                .Include("~/Vendor/stringjs/lib/string.min.js")
+                .Include("~/Vendor/underscore/underscore-min.js")
                 .Include("~/Vendor/placeholders/angular-placeholders-0.0.1-SNAPSHOT.min.js");
             vendorBundle.Transforms.Add(new JsMinify());
             bundles.Add(vendorBundle);

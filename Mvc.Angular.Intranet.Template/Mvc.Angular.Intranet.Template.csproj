@@ -21,6 +21,8 @@
     <IISExpressWindowsAuthentication>enabled</IISExpressWindowsAuthentication>
     <IISExpressUseClassicPipelineMode />
     <WebGreaseLibPath>..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -173,6 +175,8 @@
     <Content Include="App\AppSource\Home\home.less" />
     <Content Include="App\Common\Resources\Header\header.tpl.html" />
     <Content Include="App\Common\Resources\Header\header.less" />
+    <Content Include="App\Common\Services\underscore\underscore.coffee" />
+    <Content Include="App\Common\Services\stringjs\stringjs.coffee" />
     <None Include="Properties\PublishProfiles\Mvc.Ng.Release.pubxml" />
     <Content Include="Vendor\angular-bootstrap\ui-bootstrap-tpls.js" />
     <Content Include="Vendor\angular-bootstrap\ui-bootstrap-tpls.min.js" />
@@ -459,6 +463,35 @@
     <Content Include="Vendor\jquery\jquery.js" />
     <Content Include="Vendor\jquery\jquery.min.js" />
     <Content Include="Vendor\placeholders\angular-placeholders-0.0.1-SNAPSHOT.min.js" />
+    <Content Include="Vendor\stringjs\.gitignore" />
+    <Content Include="Vendor\stringjs\lib\string.js" />
+    <Content Include="Vendor\stringjs\lib\string.min.js" />
+    <Content Include="Vendor\stringjs\test\browser.test.html" />
+    <Content Include="Vendor\stringjs\test\string.test.js" />
+    <Content Include="Vendor\underscore\.gitignore" />
+    <Content Include="Vendor\underscore\docs\docco.css" />
+    <Content Include="Vendor\underscore\docs\favicon.ico" />
+    <Content Include="Vendor\underscore\docs\images\background.png" />
+    <Content Include="Vendor\underscore\docs\images\underscore.png" />
+    <Content Include="Vendor\underscore\docs\public\stylesheets\normalize.css" />
+    <Content Include="Vendor\underscore\docs\underscore.html" />
+    <Content Include="Vendor\underscore\favicon.ico" />
+    <Content Include="Vendor\underscore\index.html" />
+    <Content Include="Vendor\underscore\test\arrays.js" />
+    <Content Include="Vendor\underscore\test\chaining.js" />
+    <Content Include="Vendor\underscore\test\collections.js" />
+    <Content Include="Vendor\underscore\test\functions.js" />
+    <Content Include="Vendor\underscore\test\index.html" />
+    <Content Include="Vendor\underscore\test\objects.js" />
+    <Content Include="Vendor\underscore\test\speed.js" />
+    <Content Include="Vendor\underscore\test\utility.js" />
+    <Content Include="Vendor\underscore\test\vendor\jquery.js" />
+    <Content Include="Vendor\underscore\test\vendor\jslitmus.js" />
+    <Content Include="Vendor\underscore\test\vendor\qunit.css" />
+    <Content Include="Vendor\underscore\test\vendor\qunit.js" />
+    <Content Include="Vendor\underscore\test\vendor\runner.js" />
+    <Content Include="Vendor\underscore\underscore-min.js" />
+    <Content Include="Vendor\underscore\underscore.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -476,6 +509,81 @@
     <None Include="readme.txt" />
     <Content Include="Views\Launch\Startup.cshtml" />
     <Content Include="Views\HomeTpl\Index.cshtml" />
+    <Content Include="Vendor\angular-bootstrap\bower.json" />
+    <Content Include="Vendor\angular-bootstrap\.bower.json" />
+    <Content Include="Vendor\angular-ui-router\LICENSE" />
+    <Content Include="Vendor\angular-ui-utils\README.md" />
+    <Content Include="Vendor\angular-ui-utils\package.json" />
+    <Content Include="Vendor\angular-ui-utils\modules\reset\stylesheets\reset.less" />
+    <Content Include="Vendor\angular-ui-utils\modules\jq\README.md" />
+    <Content Include="Vendor\angular-ui-utils\modules\ie-shiv\README.md" />
+    <Content Include="Vendor\angular-ui-utils\modules\highlight\highlight.less" />
+    <Content Include="Vendor\angular-ui-utils\LICENSE" />
+    <Content Include="Vendor\angular-ui-utils\CONTRIBUTING.md" />
+    <Content Include="Vendor\angular-ui-utils\bower.json" />
+    <Content Include="Vendor\angular-ui-utils\.travis.yml" />
+    <Content Include="Vendor\angular-ui-utils\.bower.json" />
+    <Content Include="Vendor\jquery\README.md" />
+    <Content Include="Vendor\jquery\package.json" />
+    <Content Include="Vendor\jquery\jquery.min.map" />
+    <Content Include="Vendor\jquery\composer.json" />
+    <Content Include="Vendor\jquery\component.json" />
+    <Content Include="Vendor\bootstrap\README.md" />
+    <Content Include="Vendor\bootstrap\package.json" />
+    <Content Include="Vendor\bootstrap\LICENSE" />
+    <Content Include="Vendor\bootstrap\less\wells.less" />
+    <Content Include="Vendor\bootstrap\less\variables.less" />
+    <Content Include="Vendor\bootstrap\less\utilities.less" />
+    <Content Include="Vendor\bootstrap\less\type.less" />
+    <Content Include="Vendor\bootstrap\less\tooltip.less" />
+    <Content Include="Vendor\bootstrap\less\thumbnails.less" />
+    <Content Include="Vendor\bootstrap\less\theme.less" />
+    <Content Include="Vendor\bootstrap\less\tables.less" />
+    <Content Include="Vendor\bootstrap\less\scaffolding.less" />
+    <Content Include="Vendor\bootstrap\less\responsive-utilities.less" />
+    <Content Include="Vendor\bootstrap\less\progress-bars.less" />
+    <Content Include="Vendor\bootstrap\less\print.less" />
+    <Content Include="Vendor\bootstrap\less\popovers.less" />
+    <Content Include="Vendor\bootstrap\less\panels.less" />
+    <Content Include="Vendor\bootstrap\less\pagination.less" />
+    <Content Include="Vendor\bootstrap\less\pager.less" />
+    <Content Include="Vendor\bootstrap\less\normalize.less" />
+    <Content Include="Vendor\bootstrap\less\navs.less" />
+    <Content Include="Vendor\bootstrap\less\navbar.less" />
+    <Content Include="Vendor\bootstrap\less\modals.less" />
+    <Content Include="Vendor\bootstrap\less\mixins.less" />
+    <Content Include="Vendor\bootstrap\less\media.less" />
+    <Content Include="Vendor\bootstrap\less\list-group.less" />
+    <Content Include="Vendor\bootstrap\less\labels.less" />
+    <Content Include="Vendor\bootstrap\less\jumbotron.less" />
+    <Content Include="Vendor\bootstrap\less\input-groups.less" />
+    <Content Include="Vendor\bootstrap\less\grid.less" />
+    <Content Include="Vendor\bootstrap\less\glyphicons.less" />
+    <Content Include="Vendor\bootstrap\less\forms.less" />
+    <Content Include="Vendor\bootstrap\less\dropdowns.less" />
+    <Content Include="Vendor\bootstrap\less\component-animations.less" />
+    <Content Include="Vendor\bootstrap\less\code.less" />
+    <Content Include="Vendor\bootstrap\less\close.less" />
+    <Content Include="Vendor\bootstrap\less\carousel.less" />
+    <Content Include="Vendor\bootstrap\less\buttons.less" />
+    <Content Include="Vendor\bootstrap\less\button-groups.less" />
+    <Content Include="Vendor\bootstrap\less\breadcrumbs.less" />
+    <Content Include="Vendor\bootstrap\less\bootstrap.less" />
+    <Content Include="Vendor\bootstrap\less\badges.less" />
+    <Content Include="Vendor\bootstrap\less\alerts.less" />
+    <Content Include="Vendor\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Vendor\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Vendor\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Vendor\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Vendor\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Vendor\bootstrap\dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Vendor\bootstrap\CONTRIBUTING.md" />
+    <Content Include="Vendor\bootstrap\composer.json" />
+    <Content Include="Vendor\bootstrap\CNAME" />
+    <Content Include="Vendor\bootstrap\browserstack.json" />
+    <Content Include="Vendor\bootstrap\bower.json" />
+    <Content Include="Vendor\bootstrap\_config.yml" />
+    <Content Include="Vendor\bootstrap\.bower.json" />
     <Content Include="Vendor\font-awesome\src\Makefile" />
     <Content Include="Vendor\font-awesome\src\icons.yml" />
     <Content Include="Vendor\font-awesome\src\CNAME" />
@@ -587,81 +695,34 @@
     <Content Include="Vendor\font-awesome\_config.yml" />
     <Content Include="Vendor\font-awesome\.ruby-version" />
     <Content Include="Vendor\font-awesome\.bower.json" />
-    <Content Include="Vendor\angular-ui-utils\README.md" />
-    <Content Include="Vendor\angular-ui-utils\package.json" />
-    <Content Include="Vendor\angular-ui-utils\modules\reset\stylesheets\reset.less" />
-    <Content Include="Vendor\angular-ui-utils\modules\jq\README.md" />
-    <Content Include="Vendor\angular-ui-utils\modules\ie-shiv\README.md" />
-    <Content Include="Vendor\angular-ui-utils\modules\highlight\highlight.less" />
-    <Content Include="Vendor\angular-ui-utils\LICENSE" />
-    <Content Include="Vendor\angular-ui-utils\CONTRIBUTING.md" />
-    <Content Include="Vendor\angular-ui-utils\bower.json" />
-    <Content Include="Vendor\angular-ui-utils\.travis.yml" />
-    <Content Include="Vendor\angular-ui-utils\.bower.json" />
-    <Content Include="Vendor\angular-ui-router\LICENSE" />
-    <Content Include="Vendor\angular-bootstrap\bower.json" />
-    <Content Include="Vendor\angular-bootstrap\.bower.json" />
-    <Content Include="Vendor\jquery\README.md" />
-    <Content Include="Vendor\jquery\package.json" />
-    <Content Include="Vendor\jquery\jquery.min.map" />
-    <Content Include="Vendor\jquery\composer.json" />
-    <Content Include="Vendor\jquery\component.json" />
-    <Content Include="Vendor\bootstrap\README.md" />
-    <Content Include="Vendor\bootstrap\package.json" />
-    <Content Include="Vendor\bootstrap\LICENSE" />
-    <Content Include="Vendor\bootstrap\less\wells.less" />
-    <Content Include="Vendor\bootstrap\less\variables.less" />
-    <Content Include="Vendor\bootstrap\less\utilities.less" />
-    <Content Include="Vendor\bootstrap\less\type.less" />
-    <Content Include="Vendor\bootstrap\less\tooltip.less" />
-    <Content Include="Vendor\bootstrap\less\thumbnails.less" />
-    <Content Include="Vendor\bootstrap\less\theme.less" />
-    <Content Include="Vendor\bootstrap\less\tables.less" />
-    <Content Include="Vendor\bootstrap\less\scaffolding.less" />
-    <Content Include="Vendor\bootstrap\less\responsive-utilities.less" />
-    <Content Include="Vendor\bootstrap\less\progress-bars.less" />
-    <Content Include="Vendor\bootstrap\less\print.less" />
-    <Content Include="Vendor\bootstrap\less\popovers.less" />
-    <Content Include="Vendor\bootstrap\less\panels.less" />
-    <Content Include="Vendor\bootstrap\less\pagination.less" />
-    <Content Include="Vendor\bootstrap\less\pager.less" />
-    <Content Include="Vendor\bootstrap\less\normalize.less" />
-    <Content Include="Vendor\bootstrap\less\navs.less" />
-    <Content Include="Vendor\bootstrap\less\navbar.less" />
-    <Content Include="Vendor\bootstrap\less\modals.less" />
-    <Content Include="Vendor\bootstrap\less\mixins.less" />
-    <Content Include="Vendor\bootstrap\less\media.less" />
-    <Content Include="Vendor\bootstrap\less\list-group.less" />
-    <Content Include="Vendor\bootstrap\less\labels.less" />
-    <Content Include="Vendor\bootstrap\less\jumbotron.less" />
-    <Content Include="Vendor\bootstrap\less\input-groups.less" />
-    <Content Include="Vendor\bootstrap\less\grid.less" />
-    <Content Include="Vendor\bootstrap\less\glyphicons.less" />
-    <Content Include="Vendor\bootstrap\less\forms.less" />
-    <Content Include="Vendor\bootstrap\less\dropdowns.less" />
-    <Content Include="Vendor\bootstrap\less\component-animations.less" />
-    <Content Include="Vendor\bootstrap\less\code.less" />
-    <Content Include="Vendor\bootstrap\less\close.less" />
-    <Content Include="Vendor\bootstrap\less\carousel.less" />
-    <Content Include="Vendor\bootstrap\less\buttons.less" />
-    <Content Include="Vendor\bootstrap\less\button-groups.less" />
-    <Content Include="Vendor\bootstrap\less\breadcrumbs.less" />
-    <Content Include="Vendor\bootstrap\less\bootstrap.less" />
-    <Content Include="Vendor\bootstrap\less\badges.less" />
-    <Content Include="Vendor\bootstrap\less\alerts.less" />
-    <Content Include="Vendor\bootstrap\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="Vendor\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="Vendor\bootstrap\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Vendor\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="Vendor\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="Vendor\bootstrap\dist\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Vendor\bootstrap\CONTRIBUTING.md" />
-    <Content Include="Vendor\bootstrap\composer.json" />
-    <Content Include="Vendor\bootstrap\CNAME" />
-    <Content Include="Vendor\bootstrap\browserstack.json" />
-    <Content Include="Vendor\bootstrap\bower.json" />
-    <Content Include="Vendor\bootstrap\_config.yml" />
-    <Content Include="Vendor\bootstrap\.bower.json" />
+    <Content Include="Vendor\stringjs\test\mocha.opts" />
+    <Content Include="Vendor\stringjs\README.md" />
+    <Content Include="Vendor\stringjs\package.json" />
+    <Content Include="Vendor\stringjs\Makefile" />
+    <Content Include="Vendor\stringjs\component.json" />
+    <Content Include="Vendor\stringjs\CNAME" />
+    <Content Include="Vendor\stringjs\CHANGELOG.md" />
+    <Content Include="Vendor\stringjs\.travis.yml" />
+    <Content Include="Vendor\stringjs\.documentup.json" />
+    <Content Include="Vendor\stringjs\.bower.json" />
+    <Content Include="Vendor\underscore\underscore-min.map" />
+    <Content Include="Vendor\underscore\README.md" />
+    <Content Include="Vendor\underscore\Rakefile" />
+    <Content Include="Vendor\underscore\package.json" />
+    <Content Include="Vendor\underscore\LICENSE" />
+    <Content Include="Vendor\underscore\docs\public\fonts\novecento-bold.woff" />
+    <Content Include="Vendor\underscore\docs\public\fonts\novecento-bold.ttf" />
+    <Content Include="Vendor\underscore\docs\public\fonts\novecento-bold.eot" />
+    <Content Include="Vendor\underscore\docs\public\fonts\aller-light.woff" />
+    <Content Include="Vendor\underscore\docs\public\fonts\aller-light.ttf" />
+    <Content Include="Vendor\underscore\docs\public\fonts\aller-light.eot" />
+    <Content Include="Vendor\underscore\docs\public\fonts\aller-bold.woff" />
+    <Content Include="Vendor\underscore\docs\public\fonts\aller-bold.ttf" />
+    <Content Include="Vendor\underscore\docs\public\fonts\aller-bold.eot" />
+    <Content Include="Vendor\underscore\CONTRIBUTING.md" />
+    <Content Include="Vendor\underscore\CNAME" />
+    <Content Include="Vendor\underscore\.travis.yml" />
+    <Content Include="Vendor\underscore\.bower.json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App\Common\Directives\" />
@@ -682,7 +743,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>46576</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:8961/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
@@ -699,6 +760,7 @@
     <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.10\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
     <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.10\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
   </Target>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Vendor.Underscore</id>
+    <version>1.5.2</version>
+    <authors>Jash Kenas</authors>
+    <owners>https://github.com/jashkenas/underscore/contributors</owners>
+    <licenseUrl>https://raw.github.com/jashkenas/underscore/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/jashkenas/underscore</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Underscore.js is a utility-belt library for JavaScript that provides
+support for the usual functional suspects (each, map, reduce, filter...)
+without extending any core JavaScript objects.
+
+For Docs, License, Tests, and pre-packed downloads, see:
+http://underscorejs.org</description>
+  </metadata>
+</package>

@@ -2,6 +2,8 @@
   'titleService',
   'ui.router',
   'ui.bootstrap',
+  'underscore',
+  'stringjs',
   'home'
 ]);
 
